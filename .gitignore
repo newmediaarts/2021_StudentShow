@@ -3,3 +3,6 @@
 
 # MAC files
 *.DS_Store
+
+# NPM
+NODE_MODULES
