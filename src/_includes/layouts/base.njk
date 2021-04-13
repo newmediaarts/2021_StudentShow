@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <main>
         <h1>{{title}}</h1>
-        <h2>{{home.name}} : {{home.title}}</h2>
+
+
+        <div class="student_grid">
+        {% for student in students %}
+            <div class="student_block">
+                <h3>{{student.name}}</h3>
+                <a href="/{{student.name | slug}}/">View my website</a>
+            </div>
+        {% endfor %}
+        </div>
     </main>
 </body>
 
