@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>{{title}}</h1>
-
+    </header>
+    <main>
 
         <div class="student_grid">
-        {% for student in students %}
+            {% for student in students %}
             <div class="student_block">
-                <h3>{{student.name}}</h3>
-                <a href="/{{student.name | slug}}/">View my website</a>
+                <a href="{{student.website}}" class="img-wrapper"><img src="img/{{student.photo}}"
+                        alt="{{student.name}} Photo" /></a>
+                <h3><a href="{{student.website}}">{{student.name}}</a></h3>
+                <!-- <a href="/{{student.name | slug}}/">View my website</a> -->
+                <a href="{{student.website}}" class="button">Website</a>
             </div>
-        {% endfor %}
+            {% endfor %}
         </div>
     </main>
+    <footer>
+        <!-- <div class="site-id">NMA</div> -->
+    </footer>
 </body>
 
 </html>
