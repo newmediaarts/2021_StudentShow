@@ -6,7 +6,7 @@ NMA Student Show Website 2021 - currently in development.
 
 ## Local Setup:
 
-If you have Eleventy Installed Globally (e.g. via npm install -g @11ty/eleventy), then simply use:
+If you have Eleventy installed globally (e.g. via npm install -g @11ty/eleventy), then simply use:
 
 - npx @11ty/eleventy --serve
 
