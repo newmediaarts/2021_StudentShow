@@ -9,6 +9,9 @@
     <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
 
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -30,22 +33,81 @@
                 <h1>View the Trailer</h1>
             </div>
 
-            <div class="student_grid">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    {% for student in students %}
+                    <div class="swiper-slide card student_block">
+                        <a href="{{student.website}}" class="img-wrapper"><img src="img/{{student.photo}}"
+                                alt="{{student.name}} Photo" /></a>
+                        <h3><a href="{{student.website}}">{{student.name}}</a></h3>
+                        <!-- <a href="/{{student.name | slug}}/">View my website</a> -->
+                        <a href="{{student.website}}" class="button">Website</a>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+            <!-- <div class="student_grid">
                 {% for student in students %}
                 <div class="student_block card">
                     <a href="{{student.website}}" class="img-wrapper"><img src="img/{{student.photo}}"
                             alt="{{student.name}} Photo" /></a>
                     <h3><a href="{{student.website}}">{{student.name}}</a></h3>
-                    <!-- <a href="/{{student.name | slug}}/">View my website</a> -->
+                    <a href="/{{student.name | slug}}/">View my website</a>
                     <a href="{{student.website}}" class="button">Website</a>
                 </div>
                 {% endfor %}
-            </div>
+            </div> -->
+
         </main>
         <footer>
             <!-- <div class="site-id">NMA</div> -->
         </footer>
     </div>
+
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+            slidesPerView: 7,
+            spaceBetween: 10,
+
+            // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+            // Navigation arrows
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+    </script>
+
 </body>
 
 </html>

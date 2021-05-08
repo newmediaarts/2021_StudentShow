@@ -30,11 +30,11 @@ h1 {
 }
 
 .card {
-  padding: 1em;
+  padding:1vh 1vw;
   background-color: rgba(255,255,255,.2);
-  margin: .5em;
+  margin: .5vh 0;
   border-radius: .5em;
-  box-shadow: 0 0 .5em .5em rgba(0,0,0,.05);
+  box-shadow: 0 0 .5vw .5vw rgba(0,0,0,.05);
 }
 .card:hover {
   background-color: rgba(255,255,255,.3);
@@ -43,6 +43,8 @@ h1 {
 .video_block {
   padding: 20vh 1vw;
 }
+
+
 
 .student_grid {
   display: flex;
@@ -55,8 +57,9 @@ h1 {
   min-width: 120px;
 }
 
+.card h3,
 .student_block h3 {
-  margin: .1em 0 .3em 0;
+  margin: .1vh 0 .3vh 0;
   font-size: .8em;
   font-weight: 400;
 }
@@ -113,8 +116,8 @@ header {
   background-color: rgba(255,255,255,.2);
   color: white;
   display: inline-block;
-  padding: .5em 1em;
-  border-radius: .5em;
+  padding: .5vh 1vw;
+  border-radius: .5vw;
   text-decoration: none;
   text-transform: uppercase;
   font-size: .8em;
