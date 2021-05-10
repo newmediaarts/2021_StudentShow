@@ -10,6 +10,8 @@
     <!-- ADOBE FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/imp2bsl.css">
 
+    <link href="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.min.css" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -29,8 +31,20 @@
             place-items: center;
             padding: 1em;
             padding: 4vh 4vw;
-
         }
+
+        .site-wrapper::before {
+            content: "";
+            display: block;
+            background: rgba(0, 0, 0, .5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+
 
         /* animated background */
         .animated-bg {
@@ -69,6 +83,11 @@
                 animation: animatedGradient 10s ease infinite;
                 background-size: 400%;
             }
+        }
+
+        .contentbox {
+            position: relative;
+            z-index: 100;
         }
 
 
@@ -114,12 +133,46 @@
             font-size: .5em;
             font-weight: bold;
         }
+
+        /* VIDEO */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+            margin-bottom: 2em;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            min-width: 300px;
+            max-width: 100%;
+            margin-bottom: 2em;
+        }
     </style>
 </head>
 
 <body>
     <div class="site-wrapper animated-bg">
-        <div class="textbox">
+        <div class="contentbox">
+            <div class="video-wrapper">
+                <iframe
+                    src="https://player.cloudinary.com/embed/?public_id=nma-studentshow2021-trailer-v3_ngg9ie&cloud_name=gargiulo&player%5Bfluid%5D=true&player%5Bcontrols%5D=true&player%5Bmuted%5D=true&player%5Bposter_options%5D%5Btransformation%5D%5Bstart_offset%5D=30&player%5Bautoplay%5D=true&player%5Bloop%5D=true&source%5Bsource_types%5D%5B0%5D=mp4"
+                    width="640" height="480" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                    allowfullscreen frameborder="0"></iframe>
+            </div>
+            <!-- <div class="video-container">
+                <video id="doc-player" controls muted class="cld-video-player cld-fluid"></video>
+            </div> -->
             <div class="running-head">Save the&nbsp;Date</div>
             <h1>NMA Student Show 2021</h1>
             <h2>Thursday May 20<sup>th</sup> @&nbsp;4pm</h2>
@@ -128,6 +181,20 @@
                 and animated&nbsp;short&nbsp;film!</p>
         </div>
     </div>
+
+
+    <script src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js"
+        type="text/javascript"></script>
+    <script src="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.min.js"
+        type="text/javascript"></script>
+
+    <script>
+        var cld = cloudinary.Cloudinary.new({ cloud_name: 'gargiulo' });
+        var demoplayer = cld.videoPlayer('doc-player').width(600);
+        demoplayer.source('nma-studentshow2021-trailer-v3_ngg9ie')
+    </script>
+
+
 </body>
 
 </html>
