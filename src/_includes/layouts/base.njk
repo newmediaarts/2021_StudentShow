@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
 
-    <!-- GOOGLE FONTS -->
-    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/imp2bsl.css">
+
 
     <!-- SWIPER JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -21,11 +22,11 @@
             <h1 class="site-title">{{title}}</h1>
             <nav class="site-nav">
                 <ul>
-                    <li><a href="https://www.kapiolani.hawaii.edu/">KapCC</a></li>
-                    <li><a href="http://nma.kapiolani.hawaii.edu/">NMA</a></li>
+                    <li><a href="https://www.kapiolani.hawaii.edu/" class="logo-kapcc">KapCC</a></li>
+                    <li><a href="http://nma.kapiolani.hawaii.edu/" class="logo-nma">NMA</a></li>
                 </ul>
             </nav>
-            <p class="site-info">May 20th @ 5pm</p>
+            <p class="site-info">May 20<sup>th</sup> @ 4pm</p>
         </header>
         <main>
 
@@ -48,7 +49,7 @@
                     <div class="swiper-slide card student_block">
                         <a href="{{student.website}}" class="img-wrapper"><img src="img/{{student.photo}}"
                                 alt="{{student.name}} Photo" /></a>
-                        <h3><a href="{{student.website}}">{{student.name}}</a></h3>
+                        <h3 class="student-name"><a href="{{student.website}}">{{student.name}}</a></h3>
                         <!-- <a href="/{{student.name | slug}}/">View my website</a> -->
                         <a href="{{student.website}}" class="button">Website</a>
                     </div>
