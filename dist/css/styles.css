@@ -133,7 +133,7 @@ header {
     grid-area: middle;
     text-align: middle;
     margin: 0;
-    font-size: 4em;
+    font-size: 1em;
 }
 
 .title p {
