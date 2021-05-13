@@ -5,11 +5,9 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 1);
+    /* background-color: rgba(66, 29, 91, 1); */
+    background-color: rgba(33, 78, 117, 1);
     color: rgba(255, 255, 255, 0.8);
-}
-
-body {
     font-family: acumin-pro, Helvetica, Arial, sans-serif;
 }
 
@@ -18,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h4 {
     font-size: 1em;
 }
 
@@ -136,22 +134,60 @@ header {
     font-size: 1em;
 }
 
-.title p {
-    font-size: 2em;
+.title h2 {
+    font-size: 5em;
+    font-family: acumin, Helvetica, Arial, sans-serif;
+    /* font-family: kepler-std-display, Georgia, "Times New Roman", Times, serif; */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
-.title h2 {
-    font-size: 3em;
-    padding-top: 1.5em;
+.title h3,
+.join-us-a h3,
+.students-text h3 {
+    font-size: 2.5em;
     font-family: acumin-pro-condensed, Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.13em;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+}
+
+.title p,
+.join-us-a p,
+.students-text p {
+    font-size: 1.5em;
+}
+
+@media (max-width: 767px) {
+    .title h2 {
+        font-size: 2.5em;
+    }
+    .title h3,
+    .join-us-a h3,
+    .students-text h3 {
+        font-size: 1.75em;
+    }
+    .title p,
+    .join-us-a p,
+    .students-text p {
+        font-size: 1em;
+    }
 }
 
 .stitle {
     font-size: 0.5em;
     font-family: acumin-pro-condensed, Helvetica, Arial, sans-serif;
     font-weight: 400;
+}
+
+.join-us-b {
+    padding-top: 1em;
+}
+
+section {
+    padding: 2em;
 }
 
 @media (max-width: 767px) {
@@ -193,11 +229,24 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     display: inline-block;
-    padding: 0.5vh 1vw;
+    padding: 1vh 1.5vw;
     border-radius: 0.5vw;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 1em;
+}
+
+.button2 {
+    font-family: acumin-pro-condensed, Helvetica, Arial, sans-serif;
+    background-color: rgb(241, 182, 21);
+    color: white;
+    display: inline-block;
+    padding: 2vh 2.5vw;
+    /* border-radius: 0.5vw; */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0.5em;
 }
 
 
