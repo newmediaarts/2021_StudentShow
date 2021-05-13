@@ -157,8 +157,8 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    /* padding-bottom: 0.5em; */
 }
 
 .title h3,
@@ -288,6 +288,33 @@ section {
     .animated-bg {
         animation: animatedGradient 10s ease infinite;
         background-size: 400%;
+    }
+}
+
+.animated-stripes h2 {
+    font-size: 5em;
+    font-family: acumin, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    /* padding-top: 1em; */
+    /* padding-bottom: 0.5em; */
+}
+
+.animated-stripes {
+    /* background: linear-gradient(-45deg, #9d61cb 25%, #52aad2 25%, #52aad2 50%, #9d61cb 50%, #9d61cb 75%, #52aad2 75%, #52aad2); */
+    background: linear-gradient( -45deg, #ffffff 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, #ffffff 50%, #ffffff 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 10px 10px;
+    background-position: 0 0;
+    animation: stripe-animation 0.75s linear infinite;
+    text-transform: uppercase;
+}
+
+@keyframes stripe-animation {
+    100% {
+        background-position: 10px 0, 10px 0, 10px 0;
     }
 }
 
