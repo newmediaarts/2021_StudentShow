@@ -11,7 +11,7 @@ module.exports = [
     {
         name: "Racyn Noguchi",
         bio: "",
-        photo: "RacynNoguchi.jpg",
+        photo: "racyn-noguchi.jpg",
         website: "https://sites.google.com/view/webdemoreeldemosite/home",
         demoreel: "",
     },
