@@ -67,22 +67,15 @@
             margin: 3vh 0;
         }
 
-        h1 span {
-            font-weight: 600;
-        }
 
-        @media (max-width: 767px) {
+        /* @media (max-width: 767px) {
             h1 {
                 font-weight: 600;
                 font-size: 7vw;
                 font-size: clamp(3.4em, 7vw, 7em);
             }
 
-            h1 span {
-                display: block;
-            }
-
-        }
+        } */
 
         h2 {
             font-weight: 400;
@@ -145,23 +138,6 @@
             display: inline-block;
             border-radius: 5px;
         }
-
-
-        .animated-stripes {
-            /* background: linear-gradient(-45deg, #9d61cb 25%, #52aad2 25%, #52aad2 50%, #9d61cb 50%, #9d61cb 75%, #52aad2 75%, #52aad2); */
-            background: linear-gradient(-45deg, #ffffff 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, #ffffff 50%, #ffffff 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 10px 10px;
-            background-position: 0 0;
-            animation: stripe-animation 0.75s linear infinite;
-        }
-
-        @keyframes stripe-animation {
-            100% {
-                background-position: 10px 0, 10px 0, 10px 0;
-            }
-        }
     </style>
 </head>
 
@@ -178,7 +154,7 @@
                 <video id="doc-player" controls muted class="cld-video-player cld-fluid"></video>
             </div> -->
             <div class="running-head">Save the&nbsp;Date</div>
-            <h1>NMA <span class="animated-stripes">Student Show</span> 2021</h1>
+            <h1>NMA Student Show 2021</h1>
             <h2>Thursday May 20<sup>th</sup> @&nbsp;4pm</h2>
             <p>Mark your calendars and bookmark this page to get ready to see this year's student portfolios,
                 demo reels,
