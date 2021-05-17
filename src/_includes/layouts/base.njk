@@ -68,19 +68,6 @@
                 <div class="students">
                     {% for student in students %}
                     <div class="card student_block">
-                        <a href="{{students-anim.website}}" class="img-wrapper"><img src="img/{{students-anim.photo}}" alt="{{students-anim.name}} Photo" /></a>
-                        <h3 class="student-specialization">{{student.specialization}}</h3>
-                        <h3 class="student-name"><a href="{{students-anim.website}}">{{student.name}}</a></h3>
-                        <!-- <a href="/{{student.name | slug}}/">View my website</a> -->
-                        <a href="{{students-anim.website}}" class="button">Website</a> {% for student in students | students-anim %} {{ demoreel[0] }}
-                        <a href="{{students-anim.demoreel}}" class="button">Demo Reel</a>
-                    </div>
-
-                    {% endfor %}
-                </div>
-                <div class="students">
-                    {% for student in students %}
-                    <div class="card student_block">
                         <a href="{{student.website}}" class="img-wrapper"><img src="img/{{student.photo}}" alt="{{student.name}} Photo" /></a>
                         <h3 class="student-specialization">{{student.specialization}}</h3>
                         <h3 class="student-name"><a href="{{student.website}}">{{student.name}}</a></h3>

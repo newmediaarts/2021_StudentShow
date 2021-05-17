@@ -4,7 +4,7 @@ module.exports = [
         name: "Reyna Jansen",
         bio: "",
         photo: "ReynaJansen.jpg",
-        website: "https://moonmakesart.wixsite.com/gallery",
+        website: "https://moonmakesart.wixsite.com/gallery/",
         demoreel: "",
         specialization: "Animation",
     }, {
@@ -60,7 +60,7 @@ module.exports = [
         name: "Crystal Kim",
         bio: "",
         photo: "HyeLimKim.jpg",
-        website: "https://sites.google.com/hawaii.edu/rystql/art-gallery/3d",
+        website: "https://sites.google.com/hawaii.edu/rystql/",
         demoreel: "",
         specialization: "Animation",
     }, {
@@ -85,7 +85,7 @@ module.exports = [
         name: "Yiwen Jiang",
         bio: "I was born in Shanghai, China. Since I was young, I have been interested in animation, games drawing and painting, so I am better at drawing class design. In addition to interface design skills, I’m also good at drawing and watercolor. I’m still improving my interface design and communication skills. ",
         photo: "YiwenJiang.jpg",
-        website: "https://yiwen-jiang.github.io/Portfolio/",
+        website: "http://yiwenjiang.space/",
         specialization: "Interface Design",
     }, {
         name: "Ai Tomoi",
