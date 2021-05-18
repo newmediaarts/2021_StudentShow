@@ -66,16 +66,7 @@
                     <p>Explore the students’ work by visiting links to their websites, demo reels, and portfolios.</p>
                 </div>
                 <div class="students">
-                    {% for student in students %}
-                    <div class="card student_block">
-                        <a href="{{student.website}}" class="img-wrapper"><img src="img/{{student.photo}}" alt="{{student.name}} Photo" /></a>
-                        <h3 class="student-specialization">{{student.specialization}}</h3>
-                        <h3 class="student-name"><a href="{{student.website}}">{{student.name}}</a></h3>
-                        <!-- <a href="/{{student.name | slug}}/">View my website</a> -->
-                        <a href="{{student.website}}" class="button">Website</a>
-                    </div>
-
-                    {% endfor %}
+                    {% for student in students %} {% include "../partials/student-block.njk" %} {% endfor %}
                 </div>
             </section>
         </main>

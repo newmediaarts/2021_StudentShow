@@ -64,6 +64,20 @@ sup {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+@media (max-width: 767px) {
+    .card {
+        padding: 2.5vh 3.5vw;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 3.5vh 2.5vw;
+        border-radius: 0.5em;
+        box-shadow: 0 0 0.5vw 0.5vw rgba(0, 0, 0, 0.05);
+    }
+    .student_block {
+        max-width: 20vw;
+        min-width: 300px;
+    }
+}
+
 
 /* 
 .card img {
@@ -91,8 +105,8 @@ sup {
 } */
 
 .student_block {
-    max-width: 25vw;
-    min-width: 325px;
+    max-width: 20vw;
+    min-width: 300px;
 }
 
 .student-name {
@@ -206,6 +220,16 @@ section {
     .title p {
         font-size: 1em;
         padding-bottom: 3em;
+    }
+    .button {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        display: inline-block;
+        padding: 1vh 1.5vw;
+        border-radius: 0.5vw;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
     }
 }
 

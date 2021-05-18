@@ -1,0 +1,13 @@
+<div class="card student_block">
+    <a href="{{student.website}}" class="img-wrapper"><img src="img/{{student.photo}}" alt="{{student.name}} Photo" /></a>
+    <h3 class="student-specialization">{{student.specialization}}</h3>
+    <h3 class="student-name"><a href="{{student.website}}">{{student.name}}</a></h3>
+    <!-- <a href="/{{student.name | slug}}/">View my website</a> -->
+    <a href="{{student.website}}" class="button">Website</a> {% if student.demoreel %}
+    <a href="{{student.demoreel}}" class="button">Demo Reel</a> {% endif %} {% if student.art %}
+    <a href="{{student.art}}" class="button">art</a> {% endif %}
+
+
+</div>
+
+{{student | log}}
