@@ -5,7 +5,7 @@ module.exports = [
         bio: "",
         photo: "ReynaJansen.jpg",
         website: "https://moonmakesart.wixsite.com/gallery/",
-        demoreel: "a",
+        demoreel: "https://www.artstation.com/reynajansen",
         // art: "https://www.artstation.com/reynajansen",
         specialization: "Animation",
     }, {
@@ -20,14 +20,14 @@ module.exports = [
         bio: "",
         photo: "DylinKhoe.jpg",
         website: "https://st3gmolak.wixsite.com/steg",
-        demoreel: "a",
+        demoreel: "https://youtube.com/playlist?list=PLFcnaWxeWvfVHbus7PAhfMEiMnRCWoiPr",
         specialization: "Animation",
     }, {
         name: "Aden Kemp",
         bio: "",
         photo: "AdenKemp.jpg",
         website: "https://sites.google.com/hawaii.edu/aok/home",
-        demoreel: "a",
+        demoreel: "https://youtu.be/54IGgVVSFFE",
         specialization: "Animation",
     }, {
         name: "Bridgette Laranio",
@@ -63,7 +63,7 @@ module.exports = [
         bio: "",
         photo: "HyeLimKim.jpg",
         website: "https://sites.google.com/hawaii.edu/rystql/",
-        demoreel: "a",
+        demoreel: "https://youtu.be/aHL4zf_tiA8",
         specialization: "Animation",
     },
     {

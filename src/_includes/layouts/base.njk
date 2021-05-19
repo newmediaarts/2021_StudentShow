@@ -33,14 +33,16 @@
             </div>
             <div class="hero">
                 <!-- <div class="card video_block"> -->
-                <h4>View the Trailer</h4>
-                <div class="video-wrapper">
-                    <iframe src="https://player.vimeo.com/video/549176373?" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/N4X0GSJTGqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <!-- </div> -->
-                    <!-- <div class="card video_block">
+                <div class="container">
+                    <!-- <h4>View the Trailer</h4> -->
+                    <div class="video-wrapper">
+                        <iframe src="https://player.vimeo.com/video/549176373?" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/N4X0GSJTGqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <!-- </div> -->
+                        <!-- <div class="card video_block">
                     <h1>View the Show Video</h1>
                 </div> --></div>
+                </div>
             </div>
             <!-- Slides -->
             <section class="join-us">
@@ -68,6 +70,11 @@
                 <div class="students">
                     {% for student in students %} {% include "../partials/student-block.njk" %} {% endfor %}
                 </div>
+            </section>
+            <section class="missed">
+                <h3>Missed the May 20<sup>th</sup> Live Webinar Show</h3>
+                <p>No worries... watch a recording of the show that includes a screening of the trailer and<br/>the practicum short film followed by a Q & A with the animation and interface design students.</p>
+                <!-- <a href="#" class="button2">Watch the Webinar Recording</a> -->
             </section>
         </main>
         <footer>

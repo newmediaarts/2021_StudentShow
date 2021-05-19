@@ -40,6 +40,7 @@ sup {
 
 .hero>* {
     flex-grow: 1;
+    padding-top: 1em;
 }
 
 .title p {
@@ -97,6 +98,11 @@ sup {
     place-items: center;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* .student_grid {
     display: flex;
@@ -122,6 +128,12 @@ sup {
     font-size: 1.2em;
     font-weight: 400;
     padding-top: 1em;
+}
+
+sup {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: bold;
 }
 
 
@@ -176,11 +188,16 @@ header {
     /* padding-bottom: 0.5em; */
 }
 
+.missed h3,
 .title h3,
 .join-us-a h3,
 .students-text h3 {
     font-size: 2.5em;
     font-family: acumin-pro-condensed, Helvetica, Arial, sans-serif;
+}
+
+.title h3 {
+    font-size: 1.75em;
 }
 
 .title p,
