@@ -78,8 +78,8 @@ module.exports = [
         name: "Venice Bagolor",
         bio: "I am interested in learning more about design, such as logo-design, typography, branding, and more. My strength is mostly hands on artwork such as sketching and drawing but willing to strengthen my skills in transitioning to the digital world.I do enjoy learning new skill and improving myself through different task and projects.",
         photo: "MaVeniceBagolor.jpg",
-        website: "#",
-        // website: "https://mbagolor.github.io/portfolio_v2/",
+        // website: "#",
+        website: "https://mbagolor.github.io/portfolio_v2/",
         specialization: "Interface Design",
     }, {
         name: "Mony Brousseau",
@@ -103,8 +103,8 @@ module.exports = [
         name: "Ai Tomoi",
         bio: "Funny, Energetic, Yoga, Meditation, Color, Nature, Playful, Hawaii, Morrocco, India, New Mexico, Sedona, Mexico, Caligraphy, Round, Hologram, Prana. I am learning to create logo designs, typography, branding and websites through my coursework in New Media Art at Kapi‘olani Community College. ",
         photo: "AiTomoi.jpg",
-        website: "#",
-        // website: "https://aitomoi.github.io/portfolio_v1a/",
+        // website: "#",
+        website: "https://aitomoi.github.io/portfolio_v1a/",
         specialization: "Interface Design",
     }, {
         name: "Liana Young",
