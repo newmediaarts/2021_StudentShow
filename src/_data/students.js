@@ -20,7 +20,7 @@ module.exports = [
         bio: "",
         photo: "DylinKhoe.jpg",
         website: "https://st3gmolak.wixsite.com/steg",
-        demoreel: "https://youtu.be/jG9nma2snTU",
+        demoreel: "https://www.youtube.com/playlist?list=PL2kahVd8sEm2Xf73F4EEcKYzEe0qTIl4g",
         specialization: "Animation",
     }, {
         name: "Aden Kemp",
