@@ -34,7 +34,7 @@ module.exports = [
         bio: "",
         photo: "BridgetteLaranio.jpg",
         website: "https://sites.google.com/view/blaranio/home",
-        demoreel: "a",
+        demoreel: "#",
         specialization: "Animation",
     }, {
         name: "Adrianremoh Mangahis",
