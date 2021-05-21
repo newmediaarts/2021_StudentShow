@@ -13,7 +13,7 @@ module.exports = [
         bio: "",
         photo: "racyn-noguchi.jpg",
         website: "https://sites.google.com/view/webdemoreeldemosite/home",
-        demoreel: "#",
+        // demoreel: "#",
         specialization: "Animation",
     }, {
         name: "DyLin Khoe",
@@ -71,7 +71,7 @@ module.exports = [
         bio: "",
         photo: "SuiLamLee.jpg",
         website: "https://sites.google.com/view/sllart/home",
-        demoreel: "#",
+        // demoreel: "#",
         specialization: "Animation",
     },
     {
