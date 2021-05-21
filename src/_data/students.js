@@ -4,7 +4,7 @@ module.exports = [
         name: "Reyna Jansen",
         bio: "",
         photo: "ReynaJansen.jpg",
-        website: "https://moonmakesart.wixsite.com/gallery/",
+        website: "https://moonmakesart.wixsite.com/gallery/project07",
         demoreel: "https://www.artstation.com/reynajansen",
         // art: "https://www.artstation.com/reynajansen",
         specialization: "Animation",
